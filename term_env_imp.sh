@@ -59,6 +59,8 @@ echo "Install 'Powerlevel9k' theme..."
 rm -rf ~/.oh-my-zsh/themes/powerlevel9k
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/themes/powerlevel9k
 cat ~/.zshrc | sed -E 's/^ZSH_THEME=.+/ZSH_THEME=\"powerlevel9k\/powerlevel9k\"/' > ~/.zshrc.upcomming
+# git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
+# cat ~/.zshrc | sed -E 's/^ZSH_THEME=.+/ZSH_THEME=\"powerlevel10k\/powerlevel10k\"/' > ~/.zshrc.upcomming
 rm -f ~/.zshrc && mv ~/.zshrc.upcomming ~/.zshrc
 echo "Install 'Powerlevel9k' theme... Done."
 
